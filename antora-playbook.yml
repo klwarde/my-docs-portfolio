@@ -1,0 +1,16 @@
+site:
+  title: Your Name - Documentation Portfolio
+  url: https://klwarde.github.io/my-docs-portfolio
+  start_page: docs::index.adoc
+content:
+  sources:
+  - url: .
+    branches: [main]
+    start_path: docs
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+output:
+  clean: true
+  dir: ./build

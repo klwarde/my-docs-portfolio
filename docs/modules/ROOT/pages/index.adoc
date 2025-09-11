@@ -1,0 +1,20 @@
+= Welcome to My Documentation Portfolio
+Hi! I'm Kathy, and this is my documentation portfolio showcasing my technical writing and documentation projects.
+
+== What You'll Find Here
+* Professional documentation samples
+* Technical writing projects
+* User guides and tutorials
+
+== Featured Projects
+
+=== xref:watercolour-painting:index.adoc[Watercolour Painting Documentation]
+This section demonstrates my ability to structure documentation using the link:https://diataxis.fr/[Diátaxis] framework, applied to watercolour painting instruction.
+
+=== xref:visual-docs:index.adoc[Infographics & Visual Content]
+This section showcases my work creating infographics, diagrams, and visual aids to support technical documentation.
+
+== Get In Touch
+* Email: klwarde@gmail.com
+* LinkedIn: https://linkedin.com/in/kathywarde
+* GitHub: https://github.com/klwarde

@@ -1,0 +1,26 @@
+= About Me
+I'm a technical writer passionate about clarity and structure, experimenting with visuals and AI to make documentation not just useful, but engaging.
+
+== Background
+I began my technical writing career in *South Africa*, documenting healthcare software. This included a medical information system used by general practitioners, and a laboratory information management system used in pathology labs. Since moving to *Australia* in 2007, I've worked across IT service management, construction project management, and IPTV. My goal is to create clear and practical documentation that helps people do their work more effectively.
+
+== Skills
+
+=== Core Skills
+* Technical Writing & Editing
+* Information Architecture & Content Strategy
+* Infographic Design
+* Generative AI (Custom GPTs, Claude, Gemini)
+
+=== Tools & Technologies
+* Documentation Tools (Antora, Microsoft Office, VS Code, Confluence)
+* Markup Languages (AsciiDoc, HTML)
+* Version Control (Git, GitHub)
+* Visual Design (Photoshop, DALLE3, Miro)
+
+== Experience
+* Created user guides for IPTV by hands-on exploration of software, reviewing specifications, and interviewing developers and business analysts.
+* Maintained and updated technical documentation to support regular software releases.
+* Improved support documentation workflows by incorporating feedback from customer support teams. This resulted in more user-focused content.
+* Partnered with customer support and operations teams to ensure documentation addressed real user needs and reduced repeat queries.
+* Collaborated with marketing to align technical and customer-facing content, creating a consistent brand voice across channels. 

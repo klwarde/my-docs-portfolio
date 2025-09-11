@@ -1,0 +1,8 @@
+name: docs
+title: Documentation Portfolio
+version: latest
+nav:
+- modules/ROOT/nav.adoc
+- modules/user-guides/nav.adoc
+- modules/visual-docs/nav.adoc
+- modules/watercolour-painting/nav.adoc

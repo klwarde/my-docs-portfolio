@@ -1,0 +1,23 @@
+= Watercolour Painting Documentation
+This section demonstrates my ability to structure documentation using the Diátaxis framework, applied to watercolour painting instruction.
+
+== Documentation Structure
+This watercolour guide follows the https://diataxis.fr/[Diátaxis framework]:
+
+=== xref:tutorials/first-painting.adoc[Tutorials] 
+Learning-oriented lessons that take beginners through their first painting experience.
+
+=== xref:how-to/mix-colors.adoc[How-to Guides]
+Problem-oriented guides that solve specific painting challenges.
+
+=== xref:reference/color-wheel.adoc[Reference]
+Information-oriented quick lookup materials for experienced painters.
+
+=== xref:explanation/paper-types.adoc[Explanations]
+Understanding-oriented discussions of concepts and theory.
+
+== Why This Demonstrates Documentation Skills
+* **Information Architecture**: Proper categorisation using proven frameworks
+* **User Experience**: Content organised by user intent and skill level
+* **Cross-referencing**: Effective linking between related concepts
+* **Multi-audience Support**: Content for beginners through advanced practitioners

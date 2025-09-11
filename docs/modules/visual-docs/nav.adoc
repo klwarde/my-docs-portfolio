@@ -1,0 +1,2 @@
+.Visual Documentation
+* xref:index.adoc[Infographics Portfolio]

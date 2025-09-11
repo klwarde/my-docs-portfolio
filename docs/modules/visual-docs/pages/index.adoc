@@ -1,0 +1,19 @@
+= Visual Documentation Portfolio
+This section showcases my work creating infographics, diagrams, and visual aids to support technical documentation.
+
+== Featured Work
+
+=== Infographics
+Complex topics broken down into visual stories.
+
+== Tools & Skills
+* Miro for infographics
+* Photoshop for image editing
+* ChatGPT, Google Gemini, Claude Sonnet for AI collaboration
+* DALLE3 for image generation
+
+== Design Principles
+* **Clarity**: Every visual element serves a purpose
+* **Consistency**: Standardised colours, fonts, and symbols
+* **Accessibility**: High contrast and clear labeling
+* **Scalability**: Works at different sizes and formats
