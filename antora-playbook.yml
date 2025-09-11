@@ -1,5 +1,5 @@
 site:
-  title: Your Name - Documentation Portfolio
+  title: Kathy Warde - Documentation Portfolio
   url: https://klwarde.github.io/my-docs-portfolio
   start_page: docs::index.adoc
 content:
@@ -11,6 +11,7 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
+  supplemental_files: ./supplemental-ui
 output:
   clean: true
   dir: ./build
