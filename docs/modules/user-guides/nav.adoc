@@ -1,2 +1,3 @@
 .User Guides
 * xref:index.adoc[User Guide Portfolio]
+* xref:how-to/antora-setup-how-to.adoc[Setting up an Antora Docs site]

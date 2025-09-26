@@ -1,10 +1,19 @@
 = User Guides Portfolio
-This section showcases my work creating user guides.
+
+This section showcases my work creating clear, practical user guides.
 
 == Featured Work
 
 === Setting up an Antora Docs site
-Here's how I built my docs site — follow these steps to do the same.
+This how-to guide walks a documentarian new to link:https://docs.antora.org/antora/latest/[Antora] through the process of building a simple documentation portfolio site and publishing it to GitHub Pages. 
+
+The guide demonstrates my ability to:
+
+* Solve a real-world problem faced by tech writers who want to host a portfolio using Antora.
+* Work with a docs-as-code toolset: VS Code, Git, AsciiDoc, Antora, and GitHub.
+* Structure documentation using the link:https://diataxis.fr/[Diátaxis] framework and link:https://canonical.com/documentation[Canonical's] documentation style guide. 
+
+xref:user-guides:how-to/antora-setup-how-to.adoc[Here's how I built my docs site] - follow these steps to create your own!
 
 === Setting up Ubuntu on Windows (Virtual Box)
-Here's how I set up Ubuntu on Windows VirtualBox.
+Here's how I set up Ubuntu on Windows VirtualBox. (Coming soon)

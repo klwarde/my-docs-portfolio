@@ -10,8 +10,8 @@ Hi! I'm Kathy, and this is my documentation portfolio showcasing my technical wr
 
 == Featured Projects
 
-=== xref:watercolour-painting:index.adoc[Watercolour Painting Documentation]
-This section demonstrates my ability to structure documentation using the link:https://diataxis.fr/[Diátaxis] framework, applied to watercolour painting instruction.
+=== xref:user-guides:how-to/antora-setup-how-to.adoc[Setting up an Antora Docs site]
+This guide demonstrates my ability to structure documentation using the link:https://diataxis.fr/[Diátaxis] framework, applied to setting up this documentation portfolio.
 
 === xref:visual-docs:index.adoc[Infographics & Visual Content]
 This section showcases my work creating infographics, diagrams, and visual aids to support technical documentation.
