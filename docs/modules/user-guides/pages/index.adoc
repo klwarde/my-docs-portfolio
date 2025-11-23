@@ -14,6 +14,3 @@ The guide demonstrates my ability to:
 * Structure documentation using the link:https://diataxis.fr/[Diátaxis] framework and link:https://canonical.com/documentation[Canonical's] documentation style guide. 
 
 xref:user-guides:how-to/antora-setup-how-to.adoc[Here's how I built my docs site] - follow these steps to create your own!
-
-=== Setting up Ubuntu on Windows (Virtual Box)
-Here's how I set up Ubuntu on Windows VirtualBox. (Coming soon)

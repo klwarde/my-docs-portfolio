@@ -1,3 +1,4 @@
 .User Guides
 * xref:index.adoc[User Guide Portfolio]
 * xref:how-to/antora-setup-how-to.adoc[Setting up an Antora Docs site]
+* xref:how-to/antora-new-laptop.adoc[Setting up your Antora docs-as-code environment on a new laptop]

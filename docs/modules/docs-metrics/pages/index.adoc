@@ -1,0 +1,18 @@
+= Documentation Metrics & Tools
+:description: Overview of documentation metrics, visualisation techniques, and tools for analysing content quality and user behaviour.
+
+This section provides a set of tools, visuals, and explanations that help you analyse the health and performance of your documentation. Each topic focuses on a specific metric or visualisation method, showing you how to generate the chart and how to interpret the insights it provides.
+
+== How-To Guides
+
+Step-by-step instructions for creating documentation metric visuals in Excel and other tools.
+
+* xref:bubble-chart-quality.adoc[Create a Documentation Quality Bubble Chart in Excel]
+
+== Explanation Topics
+
+Conceptual guides that explain how to interpret each visualisation and what insights it provides.
+
+* xref:understanding-bubble-chart-quality.adoc[Understanding Documentation Quality Bubble Charts]
+* xref:understanding-freshness-treemap.adoc[Understanding Documentation Freshness Treemaps (future)]
+* xref:understanding-complexity-heatmap.adoc[Understanding Documentation Complexity Heatmaps (future)]

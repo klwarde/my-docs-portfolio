@@ -1,0 +1,224 @@
+= How to set up your Antora docs-as-code environment on a new laptop (Windows)
+:description: Set up your documentation portfolio environment on a fresh Windows machine by reinstalling prerequisites and cloning your existing repository.
+
+== Overview
+
+This guide explains how to set up your existing documentation portfolio on a new Windows laptop.
+
+Use this guide if you already have an Antora site hosted in a GitHub repository and only need to reinstall your toolchain and restore your working environment.
+
+== Prerequisites
+
+This guide assumes you:
+
+* are using Windows 11 with PowerShell  
+* have an existing GitHub account  
+* already created your documentation portfolio repository  
+* can install applications with administrator privileges  
+* are comfortable running commands in terminal  
+
+Replace all placeholders with your own details:
+
+* `YOUR-USERNAME` → your GitHub username  
+* `YOUR-REPO-NAME` → your existing portfolio repository  
+* `C:\Projects\` → any folder you use for your local documentation projects  
+
+If you encounter errors during setup, see xref:troubleshooting:antora-setup-troubleshooting.adoc[Troubleshooting common Antora setup issues].
+
+== 1 Install Node.js LTS
+
+. Go to https://nodejs.org.
+. Download the Windows installer (LTS, `.msi` file).
+. Run the installer. Leave all default options enabled.
+. Verify the installation.
+
+----
+node -v
+npm -v
+----
+
+You should see the installed versions of Node.js and npm.
+
+== 2 Install Git for Windows
+
+. Go to https://git-scm.com/download/win.
+. Download the Windows installer.
+. Run the installer using the default configuration.
+. Configure your Git identity:
++
+----
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+----
++
+. Verify the installation:
+
+----
+git --version
+git config --list
+----
+
+Git Credential Manager will handle authentication when you clone or push to GitHub.
+
+
+== 3 Install Visual Studio Code and the AsciiDoc extension
+
+. Go to https://code.visualstudio.com/download.
+. Download and install Visual Studio Code.
+. Open VS Code.
+. Install the *AsciiDoc* extension (for editing `.adoc` files).
+
+== 4 Clone your existing GitHub repository
+
+Since you already created your documentation portfolio, you do not need to create a new repository.  
+Instead, clone the existing repository from GitHub onto your new laptop.
+
+. Go to your repository on GitHub.  
+. Copy the HTTPS clone URL.
+. In PowerShell, navigate to the folder where you store your projects:
++
+----
+cd C:\Projects\
+----
++
+. Clone the repository:
++
+----
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+----
++
+Git automatically creates a folder with the same name as your repository.
++
+. Navigate into your project directory:
+
+----
+cd YOUR-REPO-NAME
+----
+
+If prompted, authenticate with GitHub through Git Credential Manager.
+
+== 5 Install Antora and project dependencies
+
+Your cloned repository already contains a `package.json` and `package-lock.json` file.  
+Run the following command to install all project dependencies, including Antora:
+
+----
+npm install
+----
+
+Verify that Antora is installed:
+
+----
+npx antora -v
+----
+
+You should see the versions of the Antora CLI and site generator.
+
+== 6 Build and preview your site locally
+
+. Ensure you are inside your repository folder.
+. Generate the site:
++
+----
+npx antora antora-playbook.yml
+----
++
+The generated site is stored in the `build/` directory.
++
+. Preview the site using a local web server. Open a new terminal window, and run:
++
+----
+npx http-server ./build
+----
++
+. Open your browser and go to:
+
+Using a local server provides more accurate behaviour for links and assets.
+
+== 7 Verify GitHub Actions configuration
+
+If you cloned an existing documentation portfolio, your GitHub Actions workflow (`.github/workflows/docs.yml`) is already configured.  
+You do not need to recreate this file.
+
+Check that the workflow exists in your repository:
+
+----
+ls .github/workflows
+----
+
+Confirm that `docs.yml` is present.
+
+GitHub Pages deployments will run automatically when you push changes.
+
+== 8 Update `.gitignore` file (optional)
+
+If your repository is currently tracking `node_modules/` you should remove it from Git tracking. Tracking node_modules is bad because:
+
+	• It contains thousands of tiny files
+	• It bloats your repo massively
+	• It slows down cloning + pushes
+	• It leads to cross-platform inconsistencies
+	• It creates noise in every git status
+	• GitHub Actions doesn’t need it
+
+To fix:
+
+. Add `node_modules/` to `.gitignore`. Make sure your `.gitignore` contains:
++
+----
+node_modules/
+build/
+.cache/
+----
++
+(These are the three most important ignores for an Antora site.)
++
+. Remove `node_modules/` from Git tracking:
++
+----
+git rm -r --cached node_modules
+git commit -m "Remove node_modules and update .gitignore"
+git push
+----
+
+== 9 Make a test change (optional)
+
+To confirm that your environment is functioning correctly:
+
+. Open a page in `docs/modules/ROOT/pages/`.
+. Make a small text update.
+. Stage, commit, and push:
++
+----
+git add .
+git commit -m "Test update on new laptop"
+git push origin main
+----
++
+Git Credential Manager will handle authentication when you clone or push to GitHub.
++
+. Open your repository's *Actions* tab to confirm the deployment workflow runs successfully.
++
+. GitHub Pages rebuilds your site automatically after you push the change → so the live site updated.
++
+But locally, Antora does not auto-rebuild.
++
+So your local site is still showing the previous output inside your ./build folder.
++
+. To view the change locally, run: 
++
+----
+npx antora antora-playbook.yml
+----
++
+Then rerun your local server:
++
+----
+npx http-server ./build
+----
+
+== 10 Next steps
+
+Your documentation environment is now restored on your new laptop. You're now ready to continue building and publishing your Antora documentation site!
+
+

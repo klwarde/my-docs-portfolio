@@ -1,0 +1,105 @@
+= Troubleshooting Antora Setup on a New Laptop (Windows)
+:description: Quick fixes for common errors when reinstalling your Antora docs-as-code environment on a new Windows machine.
+
+This page includes quick fixes for the errors you may encounter when xref:user-guides:how-to/antora-new-laptop.adoc[setting up your Antora environment on a new Windows laptop]. These are the solutions that worked directly during the setup process.
+
+== npm error: "npm.ps1 cannot be loaded"
+
+=== Symptoms
+Running an npm command such as:
+
+```
+npm -v
+```
+
+returns:
+
+```
+npm : File ... npm.ps1 cannot be loaded because running scripts is disabled on this system.
+```
+
+=== Fix
+Allow PowerShell to run local scripts:
+
+----
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+----
+
+Then test again:
+
+----
+npm -v
+----
+
+== Git error: "git is not recognised as the name of a cmdlet"
+
+=== Symptoms
+Installing Git, and then running:
+
+```
+git --version
+```
+
+returns a “not recognised” error, but this works:
+
+```
+"C:\Program Files\Git\cmd\git.exe" --version
+```
+
+=== Why it happens
+
+The installation of Git made changes to your PATH. 
+However, Windows only loads PATH values when a new shell session starts.
+
+=== Fix
+Restart PowerShell.  
+PowerShell loads PATH only when a new shell session starts.
+
+After restarting:
+
+----
+git --version
+----
+
+== Local preview does not update after making changes
+
+=== Symptoms
+Your live site updates after pushing to GitHub, but your local preview still shows old content in `./build`.
+
+=== Why it happens
+Antora does **not** auto-rebuild locally. Your `./build` folder contains old output until you regenerate it.
+
+=== Fix
+Rebuild and restart the local server:
+
+----
+npx antora antora-playbook.yml
+npx http-server ./build
+----
+
+Then refresh your browser.
+
+== node_modules/ accidentally tracked in your repository
+
+=== Symptoms
+Your `git status` output shows thousands of files, or the repository is unusually large.
+
+=== Fix
+. Add to `.gitignore`:
++
+----
+node_modules/
+----
+. Remove it from Git tracking:
++
+----
+git rm -r --cached node_modules
+git commit -m "Remove node_modules and update .gitignore"
+git push
+----
+
+This removes `node_modules` from the repository but keeps the folder on disk.
+
+== Need more help?
+These steps cover the issues commonly encountered on a fresh Windows setup.  
+If another error appears, you can search online or ask ChatGPT for assistance.

@@ -4,4 +4,6 @@ version: latest
 nav:
 - modules/ROOT/nav.adoc
 - modules/user-guides/nav.adoc
+- modules/docs-metrics/nav.adoc
 - modules/visual-docs/nav.adoc
+- modules/troubleshooting/nav.adoc

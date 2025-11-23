@@ -1,0 +1,10 @@
+.Documentation Metrics & Tools
+* xref:index.adoc[Documentation Metrics Overview]
+* Explanation
+** xref:understanding-bubble-chart-quality.adoc[Understanding Documentation Quality Bubble Charts]
+* How To
+** xref:bubble-chart-quality.adoc[Create a Documentation Quality Bubble Chart in Excel]
+** xref:complexity-heatmap.adoc[Create a Documentation Complexity Heatmap (future)]
+** xref:freshness-treemap.adoc[Create a Content Freshness Treemap (future)]
+* Reference
+** xref:docs-metrics-glossary.adoc[Documentation Metrics Glossary]
