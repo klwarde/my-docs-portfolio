@@ -1,5 +1,8 @@
 = About Me
+
 I'm a technical writer passionate about clarity and structure, experimenting with visuals and AI to make documentation not just useful, but engaging.
+
+image::community-of-readers.jpeg[Variety of people reading on laptops in nature]
 
 == Background
 I began my technical writing career in *South Africa*, documenting healthcare software. This included a medical information system used by general practitioners, and a laboratory information management system used in pathology labs. Since moving to *Australia* in 2007, I've worked across IT service management, construction project management, and IPTV. My goal is to create clear and practical documentation that helps people do their work more effectively.

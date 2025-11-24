@@ -2,6 +2,8 @@
 
 Hi! I'm Kathy, and this is my documentation portfolio showcasing my technical writing and documentation projects.
 
+image::woman-at-desk-editing-docs.jpeg[Writer at desk]
+
 == What You'll Find Here
 * Professional documentation samples
 * Technical writing projects
