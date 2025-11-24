@@ -30,7 +30,7 @@ The sheet includes two data tables with sample quality data. Table 1 lists norma
 
 == Step 2: Format the data
 
-Format the data so Excel Excel reconises your tables as structured data.
+Format the data so Excel Excel recognises your tables as structured data.
 
 . Select the Normal Docs table.
 . In the *Home* ribbon, select *Format as Table*.
