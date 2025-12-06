@@ -1,0 +1,25 @@
+= Crafting GPTs for Productivity & Innovation  
+
+Jules White, LinkedIn Learning
+
+A three-part visual summary outlining how to design user-centred, safe, and high-performing custom GPTs on link:https://www.linkedin.com/learning/chatgpt-crafting-exceptional-gpts-for-enhanced-productivity-and-innovation/gpts-and-chatgpt-introduction-to-crafting-your-own-powerful-ai[LinkedIn Learning].  
+
+It explores UX foundations, boundary-setting, ambiguity handling, RAG, advanced prompt patterns, and the testing needed to build reliable AI assistants.
+
+Part 1
+
+image::gpt-productivity-1.jpg[Crafting GPTs, width=820, align=center]
+
+Part 2
+
+image::gpt-productivity-2.jpg[Crafting GPTs, width=820, align=center]
+
+Part 3
+
+image::gpt-productivity-3.jpg[Crafting GPTs, width=820, align=center]
+
+_Visual summary of course "ChatGPT: Crafting Exceptional GPTs for Enhanced Productivity and Innovation"_
+
+*Focus areas:* Context-aware interaction patterns, safe boundaries, ambiguity resolution, custom instructions, RAG, actions, persona design, test-case generation, and accuracy techniques.  
+
+*Why I sketched it:* To better understand how thoughtful design transforms GPTs from simple responders into intelligent, trustworthy guides that support real-world productivity and decision-making.

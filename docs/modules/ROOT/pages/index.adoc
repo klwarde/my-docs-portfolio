@@ -13,7 +13,7 @@ image::woman-at-desk-editing-docs.jpeg[Writer at desk]
 == Featured Projects
 
 === xref:user-guides:how-to/antora-setup-how-to.adoc[Setting up an Antora Docs site]
-This guide demonstrates my ability to structure documentation using the link:https://diataxis.fr/[Diátaxis] framework, applied to setting up this documentation portfolio.
+This guide demonstrates my ability to structure documentation using the link:https://diataxis.fr/[Diátaxis] framework, applied to setting up my documentation portfolio using Antora.
 
 === xref:docs-metrics:index.adoc[Documentation Metrics & Tools]
 This section showcases my work creating charts in Excel to analyse and report on the quality of technical documentation.

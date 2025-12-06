@@ -1,0 +1,21 @@
+= AI Ethics (Vilas Dhar, LinkedIn Learning)
+
+A three-part visual set exploring ethical foundations, organisational readiness, and the practical frameworks needed to implement responsible AI inside organisations as featured in the course on link:https://www.linkedin.com/learning/ethics-in-the-age-of-generative-ai[LinkedIn Learning].
+
+Part 1
+
+image::ai-ethics-1.jpg[Crafting GPTs, width=820, align=center]
+
+Part 2
+
+image::ai-ethics-2.jpg[Crafting GPTs, width=820, align=center]
+
+Part 3
+
+image::ai-ethics-3.jpg[Crafting GPTs, width=820, align=center]
+
+_Visual summary of course "Ethics in the Age of Generative AI"_
+
+*Focus areas:* Responsible data practices, well-defined boundaries, transparency, training, governance, and long-term ethical stewardship.  
+
+*Why I sketched it:* To understand how ethics becomes operational - moving from abstract principle to daily decision-making.

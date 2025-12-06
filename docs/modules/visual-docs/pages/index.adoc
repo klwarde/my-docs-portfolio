@@ -1,16 +1,25 @@
-= Visual Documentation Portfolio
-This section showcases my work creating infographics, diagrams, and visual aids to support technical documentation.
+= Visual Summaries
+
+This section showcases sketchnote-style visuals that summarise talks, podcasts, courses, frameworks, and other conceptual material on topics I'm currently interested in. 
+
+The visuals show how I analyse information and communicate ideas visually, blending technical writing, design, and storytelling.
 
 == Featured Work
 
-=== Infographics
-Complex topics broken down into visual stories.
+* xref:ai-ethics-summary.adoc[AI Ethics (Vilas Dhar)]
+* xref:gpt-productivity-summary.adoc[Crafting GPTs (Jules White)]
+* xref:diataxis-summary.adoc[Diátaxis Framework (Daniele Procida)]
+* xref:hybrid-intelligence-summary.adoc[Hybrid Intelligence (Frank van Harmelen)]
+* xref:memory-summary.adoc[Memory & Digital Branding (Andrea Volpini)]
+* MCP vs RAG (Explainer)
+* Taxonomy vs Ontology vs Knowledge Graph (Explainer)
 
 == Tools & Skills
-* Miro for infographics
+* Miro for layout
 * Photoshop for image editing
-* ChatGPT, Google Gemini, Claude Sonnet for AI collaboration
-* DALLE3 for image generation
+* ChatGPT, Gemini, Claude for  collaboration and exploration
+* DALLE for image generation and visual concepts
+* Visual hierarchy, colour theory, composition
 
 == Design Principles
 * **Clarity**: Every visual element serves a purpose

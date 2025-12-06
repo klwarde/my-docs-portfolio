@@ -1,0 +1,11 @@
+= Hybrid Intelligence (Frank van Harmelen, Knowledge Graph Insights Podcast)
+
+A visual summary of Frank van Harmelen's conversation on hybrid intelligence—partnerships between humans and machines grounded in shared understanding, complementary strengths, and neuro-symbolic reasoning. 
+
+image::hybrid-intelligence.png[Hybrid Intelligence, width=820, align=center]
+
+Listen to the full episode of the link:https://knowledgegraphinsights.com/frank-van-harmelen/[Knowledge Graph Insights] podcast.
+
+*Focus areas:* Theory of Mind, collaborative AI, symbolic + neural systems, real-world use cases, and the CARE framework (Collaboration, Adaptation, Responsibility, Explainability).  
+
+*Why I sketched it:* To explore how AI systems can work *with* people, not replace them—an essential concept for human-centred AI.

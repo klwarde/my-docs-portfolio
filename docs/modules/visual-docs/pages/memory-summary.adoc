@@ -1,0 +1,12 @@
+= The Role of Memory in Digital Branding for AI  
+Andrea Volpini, Knowledge Graph Insights Podcast
+
+A visual exploration of how different AI systems model "memory, and how brands can design content that aligns with semantic, episodic, and procedural memory structures.
+
+image::memory-ai-branding.jpg[AI Memory & Branding, width=820, align=center]
+
+Listen to the full episode of the link:https://knowledgegraphinsights.com/andrea-volpini/[Knowledge Graph Insights] podcast.
+
+*Focus areas:* AI memory models, structured knowledge, vector representations, online behaviour, and the shift from keyword search to agentic retrieval. 
+
+*Why I sketched it:* To understand how AI agents store, retrieve, and frame information—and how this changes the future of digital communication.

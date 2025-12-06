@@ -1,2 +1,7 @@
 .Visual Documentation
-* xref:index.adoc[Infographics Portfolio]
+* xref:index.adoc[Visual Summaries]
+** xref:ai-ethics-summary.adoc[AI Ethics]
+** xref:gpt-productivity-summary.adoc[Crafting GPTs]
+** xref:memory-summary.adoc[Memory in AI]
+** xref:diataxis-summary.adoc[Diátaxis Framework]
+** xref:hybrid-intelligence-summary.adoc[Hybrid Intelligence]

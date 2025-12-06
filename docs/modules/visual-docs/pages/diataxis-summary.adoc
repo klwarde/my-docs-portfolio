@@ -1,0 +1,13 @@
+= The Diátaxis Framework (Talk by Daniele Procida)
+
+A visual breakdown of Procida's influential framework for structuring technical documentation: Tutorials, How-To Guides, Technical Reference, and Explanation. 
+
+image::diataxis-summary.jpg[Diátaxis Framework, width=820, align=center]
+
+Listen to the talk at link:https://www.youtube.com/watch?v=t4vKPhjcMZg[PyConAU 2017].
+
+*Focus areas:* The four modes of documentation, how they differ, and how they work together to create healthy documentation ecosystems.
+
+*Why I sketched it:* Diátaxis is foundational to modern documentation practice, and visualising it reveals how purpose-driven structure improves clarity and usability.
+
+For a clear and well-executed example of the framework, link:https://kubernetes.io/docs/home/[explore the Kubernetes documentation].
