@@ -11,6 +11,8 @@ The visuals show how I analyse information and communicate ideas visually, blend
 * xref:diataxis-summary.adoc[Diátaxis Framework (Daniele Procida)]
 * xref:hybrid-intelligence-summary.adoc[Hybrid Intelligence (Frank van Harmelen)]
 * xref:memory-summary.adoc[Memory & Digital Branding (Andrea Volpini)]
+* xref:wtd-7-habits-summary.adoc[7 Tech Writer Habits (Janine Chen)]
+* xref:wtd-power-of-2-summary.adoc[How Support & Docs Teams Transform Technical Content Quality (Yanjie Niu)]
 * MCP vs RAG (Explainer)
 * Taxonomy vs Ontology vs Knowledge Graph (Explainer)
 

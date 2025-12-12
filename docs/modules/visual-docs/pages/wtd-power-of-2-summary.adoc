@@ -1,0 +1,11 @@
+= The Power of Two - How Support and Docs Teams Transform Technical Content Quality (Talk by Yanjie Niu)
+
+A visual breakdown of Yanjie Niu's insightful talk at Write the Docs Portland 2025. 
+
+image::wtd-power-of-2-yanjie-niu.jpg[7 Tech Writer Habits, width=820, align=center]
+
+Listen to the talk at link:https://youtu.be/4K6Bz9LM6Uc?si=xmiqOv2sHVtPld0G[Write the Docs, Portland 2025].
+
+*Focus areas:* Developing a framework for organisations to proactively improve tech docs by fostering partnerships & data-driven decisions.
+
+*Why I sketched it:* This talk shows a way that technical writers can become more strategic by partnering with support teams and leveraging docs content metrics.

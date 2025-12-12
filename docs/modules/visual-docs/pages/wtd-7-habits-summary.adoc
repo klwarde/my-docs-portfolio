@@ -1,0 +1,11 @@
+= 7 Habits of Increasingly Technical Technical Writers (Talk by Janine Chen)
+
+A visual breakdown of Janine Chen's inspiring talk at Write the Docs Portland 2025. 
+
+image::wtd-7-habits-janine-chen.jpg[7 Tech Writer Habits, width=820, align=center]
+
+Listen to the talk at link:https://www.youtube.com/watch?v=SkpXpvTk6iU[Write the Docs, Portland 2025].
+
+*Focus areas:* Becoming "technical" isn't about knowing everything, but rather about teaching yourself how to learn.
+
+*Why I sketched it:* This talk has sound advice for anyone who doesn't think they're technical enough to be a good technical writer.

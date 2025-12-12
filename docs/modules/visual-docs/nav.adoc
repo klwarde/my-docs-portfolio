@@ -5,3 +5,5 @@
 ** xref:memory-summary.adoc[Memory in AI]
 ** xref:diataxis-summary.adoc[Diátaxis Framework]
 ** xref:hybrid-intelligence-summary.adoc[Hybrid Intelligence]
+** xref:wtd-7-habits-summary.adoc[7 Tech Writer Habits]
+** xref:wtd-power-of-2-summary.adoc[Support + Doc Teams]
