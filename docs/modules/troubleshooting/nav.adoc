@@ -1,3 +1,7 @@
 .Troubleshooting
 * Antora Setup Errors
+** xref:antora-setup-troubleshooting-overview.adoc[Overview]
 ** xref:antora-setup-troubleshooting.adoc[Troubleshooting Antora Setup on a New Laptop (Windows)]
+* Set-Top Box Troubleshooting Sample
+** xref:bluetooth-remote-pairing-overview.adoc[Overview]
+** xref:bluetooth-remote-pairing.adoc[Bluetooth remote pairing or voice control not working]

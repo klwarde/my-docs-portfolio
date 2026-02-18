@@ -1,0 +1,26 @@
+= Antora Setup Troubleshooting Guide
+:page-role: sample
+
+This sample demonstrates a practical troubleshooting guide created to resolve common issues encountered when setting up an Antora documentation environment on a new Windows laptop.
+
+== Context
+
+- **Audience:** Technical writers, documentation engineers, and developers setting up a docs-as-code environment
+- **Purpose:** resolve common setup errors affecting Node.js, Git, PowerShell permissions, and local site preview
+- **Environment:** Windows laptop with Node.js, Git, and Antora installed
+- **My role:** documentation, troubleshooting, workflow capture, and knowledge sharing
+
+== Documentation Approach
+
+This guide was created during a live environment setup and documents solutions that worked immediately in practice. It demonstrates:
+
+* task-oriented troubleshooting for rapid issue resolution
+* clear symptom → cause → fix structure
+* reusable setup knowledge for future environments
+* suitability for docs-as-code onboarding and team knowledge bases
+
+This guide transforms ad-hoc troubleshooting into repeatable knowledge that accelerates future environment setups.
+
+== Note on confidentiality
+
+This sample is based on a personal development environment and contains no proprietary or confidential information.

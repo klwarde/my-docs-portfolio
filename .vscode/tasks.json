@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Antora Site",
+      "type": "shell",
+      "command": "npx antora antora-playbook.yml",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Preview Site (local server)",
+      "type": "shell",
+      "command": "npx http-server ./build",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Build & Preview",
+      "dependsOn": [
+        "Build Antora Site",
+        "Preview Site (local server)"
+      ]
+    }
+  ]
+}

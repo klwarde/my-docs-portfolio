@@ -1,0 +1,67 @@
+= Bluetooth remote pairing or voice control not working
+
+== Applies to
+Set Top Box Model A, Set Top Box Model B
+
+== Symptoms
+
+* Bluetooth pairing fails
+* Voice control not responding
+
+== Cause
+The remote is not paired via Bluetooth or requires reset.
+
+Follow the steps below to restore Bluetooth pairing and voice control.
+
+== Resolution
+
+=== Step 1: Check if set-top box was reset
+If the set-top box was factory reset, the remote may need re-pairing.
+Go to *Step 7*.
+
+If the set-top box wasn't factory reset, go to *Step 2*.
+
+=== Step 2: Reconnect remote
+Ask the customer to press buttons on the remote until the LED on the remote flashes green.
+
+NOTE: It may take a few button presses for the remote to reconnect.
+
+* If the LED flashes green and voice control works, the issue is resolved.
+* If the LED flashes red only, go to *Step 3*.
+
+=== Step 3: Pair remote via Bluetooth
+Ask the customer to press the voice button (looks like a microphone) until the LED flashes red and green. Pairing will be confirmed on screen.
+
+* If voice control works, the issue is resolved.
+* If the remote won't pair, go to *Step 4*.
+
+=== Step 4: Check remote battery level
+Ask the customer to check the remote battery level at *Menu > Settings > Remote Control*. 
+
+If the battery level is below 10% ask the customer to change the batteries.
+
+If the remote still doesn't work, go to *Step 5*.
+
+=== Step 5: Update remote software
+Ask the customer to update the remote software at *Menu > Settings > Remote Control*.
+
+If the remote still doesn't work, go to *Step 6*.
+
+=== Step 6: Reset and pair remote
+Ask the customer to reset the remote at *Menu > Settings > Remote Control*.
+
+Then ask the customer to select *Pair Remote*.
+
+If the remote still doesn't work, go to *Step 7*.
+
+=== Step 7: Re-pair Bluetooth connection
+Ask the customer to point the remote at the set-top box and hold both the *Red* and *Left arrow* buttons.
+
+Pairing will be confirmed on screen.
+
+If the remote still doesn't work, go to *Step 8*.
+
+=== Step 8: Power cycle
+Ask the customer to power cycle the set-top box and pair the remote again.
+
+If the issue persists, escalate for replacement remote.

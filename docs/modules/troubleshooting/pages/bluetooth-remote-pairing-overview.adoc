@@ -1,0 +1,70 @@
+= Troubleshooting Guide Sample
+:page-role: sample
+
+This sample demonstrates a structured troubleshooting guide used by support teams assisting customers with a set-top box service.
+
+== Context
+- *Audience:* Customer support agents
+- *Purpose:* diagnose Bluetooth remote pairing and voice control issues
+- *Original format:* Word/PDF service documentation
+- *My role:* information architecture, workflow design, task structuring, document control
+
+== Documentation Approach
+This sample has been reconstructed in AsciiDoc to demonstrate:
+
+* modular documentation practices
+* semantic structure for reuse
+* task-oriented troubleshooting workflows
+* suitability for docs-as-code environments
+
+The workflow prioritises common failure points to reduce call handling time and unnecessary escalations.
+
+== Note on confidentiality
+Content has been de-identified and reduced to a representative excerpt.
+
+== Workflow
+
+The diagnostic workflow diagram below illustrates the decision path used during live support calls.
+
+[mermaid,remote-voice-workflow,svg]
+----
+flowchart TD
+
+A[Remote or voice control not working]
+
+A --> B{Box reset?}
+
+B -->|Yes| C[Re-pair Bluetooth connection]
+B -->|No| D[Try reconnect remote]
+
+D --> E{Voice control working?}
+
+E -->|Yes| SOLVED[Problem solved]
+E -->|No| F[Pair remote via Bluetooth]
+
+F --> G{Working now?}
+
+G -->|Yes| SOLVED
+G -->|No| H[Check batteries & update remote software]
+
+H --> I{Working now?}
+
+I -->|Yes| SOLVED
+I -->|No| J[Reset & re-pair remote]
+
+J --> K{Working now?}
+
+K -->|Yes| SOLVED
+K -->|No| L[Re-pair Bluetooth connection]
+
+L --> M{Working now?}
+
+M -->|Yes| SOLVED
+M -->|No| N[Power cycle device]
+
+N --> O{Working now?}
+
+O -->|Yes| SOLVED
+O -->|No| ESCALATE[Escalate for replacement remote]
+
+----
