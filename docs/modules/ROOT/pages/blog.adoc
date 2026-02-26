@@ -1,0 +1,37 @@
+= Notes
+
+This section documents what I'm researching, learning, and synthesising. 
+
+Many of these pieces take the form of visual summaries or structured notes drawn from courses, talks, and podcasts. 
+
+The topics vary, from documentation practice and AI to environmental science and electrification, but the intent is the same: to distil complex ideas into clear, structured notes.
+
+image::woman-synthesising-notes.jpg[Writer working on research]
+
+== Documentation & AI
+
+* xref:visual-docs:diataxis-summary.adoc[Diátaxis Framework – Visual Summary]
+* xref:visual-docs:ai-ethics-summary.adoc[AI & Ethics (Vilas Dhar) – Notes]
+* xref:visual-docs:gpt-productivity-summary.adoc[Crafting GPTs (Jules White) – Visual Summary]
+* xref:visual-docs:hybrid-intelligence-summary.adoc[Hybrid Intelligence – Knowledge Graph Insights]
+* xref:visual-docs:memory-summary.adoc[Memory in AI – Knowledge Graph Insights]
+* xref:visual-docs:wtd-7-habits-summary.adoc[Write the Docs – 7 Tech Writer Habits]
+* xref:visual-docs:wtd-power-of-2-summary.adoc[Write the Docs – Support + Documentation Teams]
+
+== Science & Environmental Systems
+
+* link:https://www.quillshadow.com/infographics/environmental-science-notes-from-the-dartmouth-course[Environmental Science (Dartmouth) – Notes]
+* link:https://www.quillshadow.com/infographics/electrifying-the-everyday-a-visual-summary-of-fred-hopleys-allelectric-journey[Fred Hopley – Electrification Journey]
+* link:https://www.quillshadow.com/infographics/mitochondria-sketchnote[In Our Time – Mitochondria]
+* link:https://www.quillshadow.com/infographics/plankton-sketchnote[In Our Time – Plankton]
+* link:https://www.quillshadow.com/infographics/cephalopods-sketchnote[In Our Time – Cephalopods]
+
+== Visual Data & Infographic Projects
+
+* link:https://www.quillshadow.com/infographics/genome-sizes[Genome Sizes – Infographic]
+* link:https://www.quillshadow.com/infographics/threatened-australian-animals[Australia’s Threatened Animals – Infographic]
+* link:https://www.quillshadow.com/infographics/possums-of-australia[Possums & Gliders of Australia – Infographic]
+
+== Practical Tutorials
+
+* link:https://www.quillshadow.com/tutorials/make-a-composite-in-photoshop[Working with Layers in Photoshop]

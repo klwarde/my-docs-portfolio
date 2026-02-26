@@ -1,0 +1,19 @@
+= Portfolio
+
+I've worked mostly as a solo technical writer to create technical documentation. I've a diverse range of writing samples in my portfolio, including online help systems, user guides, and troubleshooting material I can show interested parties in person. This page provides an overview of documentation from several recent technical writing projects, and samples I've developed specifically for my online portfolio. Click the links to view the samples.
+
+image::woman-presenting-portfolio2.jpg[Writer presenting portfolio]
+
+## Portfolio sample list
+
+### User & Support Documentation
+* xref:troubleshooting:set-top-box-troubleshooting-guide.adoc[Set-Top Box Troubleshooting Guide] - Demonstrates a structured troubleshooting guide used by support teams assisting customers with a set-top box service.
+
+### Docs-as-Code & Developer Documentation
+* xref:user-guides:how-to/antora-setup-how-to.adoc[Antora Docs Site Setup] - Step-by-step guide for building a modular documentation site using Antora, demonstrating structured content design, navigation architecture, and docs-as-code workflows.
+* xref:user-guides:how-to/antora-new-laptop.adoc[Antora Environment Setup] - Technical setup guide for configuring a new laptop for an Antora-based documentation environment, including Node, Git, and local build tooling.
+* xref:troubleshooting:antora-setup-troubleshooting.adoc[Antora Setup Troubleshooting] - Practical troubleshooting reference addressing common Antora setup and build issues, structured for quick diagnosis and resolution.
+
+### Documentation Strategy & Governance
+* xref:docs-metrics:bubble-chart-quality.adoc[Create a Docs Quality Bubble Chart (Excel How-To)] - Shows how to visualise documentation quality using measurable attributes such as complexity and engagement, enabling data-informed content decisions.
+* xref:docs-metrics:understanding-bubble-chart-quality.adoc[Understanding a Docs Quality Bubble Chart] - Explains how documentation metrics can be transformed into visual insights that highlight maintenance priorities and user experience risks.

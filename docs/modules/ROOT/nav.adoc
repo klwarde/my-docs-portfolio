@@ -1,3 +1,6 @@
-.Portfolio Overview
 * xref:index.adoc[Home]
-* xref:about.adoc[About Me]
+
+* xref:portfolio.adoc[Portfolio]
+
+* xref:blog.adoc[Notes]
+

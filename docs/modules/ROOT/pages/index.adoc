@@ -1,24 +1,60 @@
-= Welcome to My Documentation Portfolio
+= Kathy Warde
+:page-role: home
 
-Hi! I'm Kathy, and this is my documentation portfolio showcasing my technical writing and documentation projects.
+*Technical Writer | Documentation Strategist | Information Architect*
 
-image::woman-at-desk-editing-docs.jpeg[Writer at desk]
+I help people understand complex systems so they can make better decisions.
 
-== What You'll Find Here
-* Professional documentation samples
-* Technical writing projects
-* Infographics projects
-* User guides and tutorials
+I'm a technical writer specialising in clear, structured documentation across user support, developer documentation, governance frameworks, and operational processes.
 
-== Featured Projects
+image::community-of-readers.jpeg[Variety of people reading on laptops in nature]
 
-=== xref:user-guides:how-to/antora-setup-how-to.adoc[Setting up an Antora Docs site]
-This guide demonstrates my ability to structure documentation using the link:https://diataxis.fr/[Diátaxis] framework, applied to setting up my documentation portfolio using Antora.
+== Background
 
-=== xref:docs-metrics:index.adoc[Documentation Metrics & Tools]
-This section showcases my work creating charts in Excel to analyse and report on the quality of technical documentation.
+I began my technical writing career in *South Africa*, documenting healthcare software including medical information systems for general practitioners and laboratory information systems for pathology labs.
+
+Since moving to *Australia* in 2007, I've worked across IT service management, construction project management, and digital media streaming platforms. My work has included user guides, controlled documentation, release updates, and support workflow documentation.
+
+Across industries, my focus remains the same: clear, accurate documentation that supports real work.
+
+== Skills
+
+* Technical Writing & Editing
+* Information Architecture & Content Strategy
+* Documentation Governance & Quality Metrics
+* User & Support Documentation
+* Docs-as-Code (Antora, AsciiDoc, Git)
+* Visual Communication & Infographic Design
+* Generative AI for documentation workflows
+
+== Tools
+
+* Antora, AsciiDoc, VS Code
+* Git & GitHub
+* Confluence & Microsoft 365
+* Excel, Power BI & data visualisation
+* Miro & Adobe tools
+
+== Education & Professional Development
+
+*Bachelor of Arts (Hons) in English, cum laude* 
+University of Stellenbosch, South Africa
+
+Selected Professional Development:
+
+* Business Analysis – RMIT
+* UX Writing for Technical Writers – UX Content Collective
+* AI & AI Ethics – LinkedIn Learning / Anthropic
+* Environmental Science – Dartmouth (Coursera)
+* ITIL Foundation
+* ISO 9001 Quality Management Systems
+
 
 == Get In Touch
-* Email: klwarde@gmail.com
-* LinkedIn: https://linkedin.com/in/kathywarde
-* GitHub: https://github.com/klwarde
+* mailto:klwarde@gmail.com[Email]
+* link:https://linkedin.com/in/kathywarde[LinkedIn]
+* link:https://github.com/klwarde[GitHub]
+* link:https://x.com/klwarde[X]
+
+
+image::woman-at-desk-editing-docs.jpeg[Writer at desk]

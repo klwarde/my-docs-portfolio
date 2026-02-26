@@ -1,0 +1,124 @@
+= Set-Top Box Troubleshooting Guide Sample
+:page-role: sample
+:toc: macro
+:toclevels: 3
+
+This sample demonstrates a structured troubleshooting guide used by support teams assisting customers with a set-top box service.
+
+== At a glance
+
+* *Audience:* Customer support agents
+* *Use case:* live call troubleshooting
+* *Issue covered:* Bluetooth remote pairing and voice control
+* *Original format:* Word/PDF service documentation
+* *My role:* information architecture, workflow design, task structuring, document control
+
+== Documentation approach
+
+This sample has been reconstructed in AsciiDoc to demonstrate:
+
+* modular documentation practices
+* semantic structure for reuse
+* task-oriented troubleshooting workflows
+* suitability for docs-as-code environments
+
+== Note on confidentiality
+
+Content has been de-identified and reduced to a representative excerpt.
+
+== Workflow
+
+The diagnostic workflow diagram below illustrates the decision path used during live support calls.
+
+The workflow prioritises common failure points to reduce call handling time and unnecessary escalations.
+
+[mermaid,remote-voice-workflow,svg]
+----
+flowchart TD
+A[Remote or voice control not working] --> B{Set-top box reset?}
+B -->|Yes| L[Re-pair Bluetooth connection]
+B -->|No| D[Reconnect remote]
+D --> E{Voice control working?}
+E -->|Yes| SOLVED[Problem solved]
+E -->|No| F[Pair remote via Bluetooth]
+F --> G{Working now?}
+G -->|Yes| SOLVED
+G -->|No| H[Check batteries & update remote software]
+H --> I{Working now?}
+I -->|Yes| SOLVED
+I -->|No| J[Reset & re-pair remote]
+J --> K{Working now?}
+K -->|Yes| SOLVED
+K -->|No| L
+L --> M{Working now?}
+M -->|Yes| SOLVED
+M -->|No| N[Power cycle set-top box]
+N --> O{Working now?}
+O -->|Yes| SOLVED
+O -->|No| ESCALATE[Escalate for replacement remote]
+----
+
+== Sample topic: Bluetooth remote pairing or voice control not working
+[#bluetooth-remote]
+
+=== Applies to
+
+Set-top box Model A, Set-top box Model B
+
+=== Symptoms
+
+* Bluetooth pairing fails
+* Voice control not responding
+
+=== Cause
+
+The remote is not paired via Bluetooth or requires reset.
+
+=== Resolution
+
+Follow the steps below to restore Bluetooth pairing and voice control.
+
+==== Step 1: Check if set-top box was reset
+If the set-top box was factory reset, the remote may need re-pairing. Go to *Step 7*.
+
+If the set-top box was not factory reset, go to *Step 2*.
+
+==== Step 2: Reconnect remote
+Ask the customer to press buttons on the remote until the LED flashes green.
+
+NOTE: It may take a few button presses for the remote to reconnect.
+
+* If the LED flashes green and voice control works, the issue is resolved.
+* If the LED flashes red only, go to *Step 3*.
+
+
+==== Step 3: Pair remote via Bluetooth
+Ask the customer to press the voice button (looks like a microphone) until the LED flashes red and green. Pairing will be confirmed on screen.
+
+* If voice control works, the issue is resolved.
+* If the remote won't pair, go to *Step 4*.
+
+==== Step 4: Check remote battery level
+Ask the customer to check the remote battery level at *Menu > Settings > Remote Control*. 
+
+* If the battery level is below 10% ask the customer to change the batteries.
+
+* If the remote still doesn't work, go to *Step 5*.
+
+==== Step 5: Update remote software
+Ask the customer to update the remote software at *Menu > Settings > Remote Control*.
+If the remote still doesn't work, go to *Step 6*.
+
+==== Step 6: Reset and pair remote
+Ask the customer to reset the remote at *Menu > Settings > Remote Control*.
+Then ask the customer to select *Pair Remote*.
+If the remote still doesn't work, go to *Step 7*.
+
+==== Step 7: Re-pair Bluetooth connection
+Ask the customer to point the remote at the set-top box and hold both the *Red* and *Left arrow* buttons.
+Pairing will be confirmed on screen.
+If the remote still doesn't work, go to *Step 8*.
+
+==== Step 8: Power cycle
+Ask the customer to power cycle the set-top box and pair the remote again.
+If the issue persists, escalate for replacement remote.
