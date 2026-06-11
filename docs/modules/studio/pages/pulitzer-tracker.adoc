@@ -24,7 +24,9 @@ image::having-an-idea.png[Rabbit having an idea,250]
 
 == The workflow
 
-This project became a four-stage workflow across two AI tools, with human direction and validation throughout.
+This project became a multi-stage workflow across two AI tools, with human direction and validation throughout.
+
+image::pulitzer-tracker-build-flow.jpg[Workflow from idea to scoped concept to working app,850]
 
 === 1. Idea and concept
 
@@ -78,20 +80,6 @@ After running the tracker locally, I completed an editorial pass of the Pulitzer
 This step mattered. During testing, I found data issues, including missing winners for some years and an incorrect handling of the two 2023 winners. I corrected the JSON listing before publishing.
 
 I then published the project using GitHub and Netlify. During deployment, Claude helped troubleshoot a Netlify issue, which required adding a `netlify.toml` file so Netlify would install the required dev dependencies.
-
-[mermaid,remote-voice-workflow,svg]
-----
-
-flowchart LR
-    A["1. Idea<br/><br/> Custom Pulitzer <br/>reading tracker<br/>Not a spreadsheet<br/>Not a generic <br/>reading app"]
-    B["2. Scope with ChatGPT<br/><br/>Concept<br/>Design direction<br/>Data structure<br/>Build options<br/>20–35 hour <br/>estimate"]
-    C["3. Build with Claude<br/><br/>React app<br/>JSON data layer<br/>localStorage<br/>Local testing"]
-    D["4. Validate content<br/><br/>Editorial pass<br/>Fixed missing winners<br/>Corrected multiple <br/>winner display"]
-    E["5. Publish<br/><br/>GitHub repo<br/>Netlify deploy<br/>netlify.toml fix"]
-    F["Outcome<br/><br/>Interactive portfolio-<br/>ready tracker!"]
-    A --> B --> C --> D --> E --> F
-
-----
 
 == Key decisions
 
