@@ -14,8 +14,8 @@ image::woman-presenting-portfolio2.jpg[Writer presenting portfolio]
 * xref:user-guides:how-to/antora-new-laptop.adoc[Antora Environment Setup] - Technical setup guide for configuring a new laptop for an Antora-based documentation environment, including Node, Git, and local build tooling.
 * xref:troubleshooting:antora-setup-troubleshooting.adoc[Antora Setup Troubleshooting] - Practical troubleshooting reference addressing common Antora setup and build issues, structured for quick diagnosis and resolution.
 
-### AI-Assisted Documentation Workflows
-
+### AI-Assisted Workflows & Tools
+* xref:studio:pulitzer-tracker.adoc[Pulitzer Fiction Reading Tracker] - Demonstrates a multi-AI workflow for turning a personal reading challenge into a working interactive app, from concept scoping and visual design direction through to React prototyping, JSON data validation, local testing, and Netlify publishing.
 * https://github.com/klwarde/ai-assisted-release-documentation-workflow[AI-Assisted Release Documentation Triage Workflow] - Shows how AI can support release discovery, triage, release note drafting, and knowledge base impact analysis while keeping validation and final publishing decisions with the technical writer.
 
 ### Documentation Strategy & Governance

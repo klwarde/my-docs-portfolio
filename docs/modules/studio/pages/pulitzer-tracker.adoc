@@ -1,0 +1,146 @@
+= Pulitzer Fiction Reading Tracker
+:description: A case study in using a multi-AI workflow to turn a personal reading challenge into a working interactive app.
+
+== Overview
+
+I built a personal reading tracker for the full Pulitzer Prize Fiction list, from 1918 to the present.
+
+The tracker lets me mark books as read, view progress at a glance, and follow the winners decade by decade as a historical reading path rather than a flat spreadsheet or generic book list.
+
+* *Try it:* https://pulitzer-tracker.netlify.app[Pulitzer Fiction Reading Tracker ^]
+* *Source:* https://github.com/klwarde/pulitzer-tracker[GitHub repository ^]
+
+image::pulitzer-reading-tracker-landing-page.jpg[Pulitzer Fiction Reading Tracker screenshot,650]
+
+== The problem
+
+I wanted a reading challenge tracker that did not quite exist.
+
+Most book trackers are either spreadsheet-heavy or designed for general reading logs. I wanted something more specific: a clean, visual tracker for a long-form literary challenge, organised by decade and built around the historical arc of the Pulitzer Prize for Fiction.
+
+The goal was not to create a complex reading app. It was to create a simple, motivating progress view for one specific challenge.
+
+image::having-an-idea.png[Rabbit having an idea,250]
+
+== The workflow
+
+This project became a four-stage workflow across two AI tools, with human direction and validation throughout.
+
+=== 1. Idea and concept
+
+I started with the core idea: a Pulitzer Fiction tracker from 1918 to the present.
+
+At a minimum, the tracker needed to show:
+
+* what I had read
+* what remained
+* how the list moved decade by decade
+* progress without turning the experience into a spreadsheet
+
+=== 2. Scoping with ChatGPT
+
+I used ChatGPT to brainstorm the concept, explore design directions, define the data structure, and compare possible build approaches.
+
+Options explored included:
+
+* Google Sheet + GitHub Pages
+* Google Sheet + Looker Studio
+* Notion gallery/database
+* Airtable gallery/interface
+* Canva or Illustrator static prototype
+
+ChatGPT helped validate that the project was feasible and scoped it at roughly 20–35 hours for a first portfolio-ready version.
+
+At this point, I added the idea to my portfolio tracker and parked it until I was ready to build.
+
+=== 3. Building with Claude
+
+image::pulitzer-reading-tracker-concept.png[Pulitzer Fiction Reading Tracker concept sketch,450]
+
+
+Once I had a clear concept and design direction, I used Claude to help build the working app.
+
+The prototype came together in a single focused session as a React app with:
+
+* a JSON data layer
+* localStorage for read/unread state
+* clickable book tiles
+* automatic progress updates
+* decade-based navigation
+* a downloadable/deployable project structure
+
+I did not write the React from scratch myself. My role was to direct the build, test the app locally, review the structure, and check whether the output matched the intended user experience.
+
+=== 4. Testing, validation, and publishing
+
+After running the tracker locally, I completed an editorial pass of the Pulitzer data.
+
+This step mattered. During testing, I found data issues, including missing winners for some years and an incorrect handling of the two 2023 winners. I corrected the JSON listing before publishing.
+
+I then published the project using GitHub and Netlify. During deployment, Claude helped troubleshoot a Netlify issue, which required adding a `netlify.toml` file so Netlify would install the required dev dependencies.
+
+[mermaid,remote-voice-workflow,svg]
+----
+
+flowchart LR
+    A["1. Idea<br/><br/> Custom Pulitzer <br/>reading tracker<br/>Not a spreadsheet<br/>Not a generic <br/>reading app"]
+    B["2. Scope with ChatGPT<br/><br/>Concept<br/>Design direction<br/>Data structure<br/>Build options<br/>20–35 hour <br/>estimate"]
+    C["3. Build with Claude<br/><br/>React app<br/>JSON data layer<br/>localStorage<br/>Local testing"]
+    D["4. Validate content<br/><br/>Editorial pass<br/>Fixed missing winners<br/>Corrected multiple <br/>winner display"]
+    E["5. Publish<br/><br/>GitHub repo<br/>Netlify deploy<br/>netlify.toml fix"]
+    F["Outcome<br/><br/>Interactive portfolio-<br/>ready tracker!"]
+    A --> B --> C --> D --> E --> F
+
+----
+
+== Key decisions
+
+=== Separate the data from the app
+
+The Pulitzer book list lives in a standalone `books.json` file rather than being hardcoded into the React components.
+
+This makes the tracker easier to maintain. Correcting a book, adding a new winner, or adjusting metadata means editing the data file without touching the app logic.
+
+=== Keep the MVP small
+
+The first version does one thing clearly: it lets me mark Pulitzer winners as read and see my progress update.
+
+I deliberately left out notes, ratings, date tracking, favourites, and next-to-read flags. Those may be useful later, but adding them too early would have made the first version heavier than it needed to be.
+
+=== Treat AI output as draft, not truth
+
+The app came together quickly, but the data still needed human review.
+
+The local test pass showed why validation matters: AI helped accelerate the build, but it did not remove the need for editorial checking, source alignment, and judgement.
+
+== What I learned
+
+This project showed me that the value of AI depends partly on using the right tool at the right stage.
+
+ChatGPT was useful for open-ended exploration: shaping the idea, comparing options, defining scope, and turning a vague concept into a buildable plan.
+
+Claude was useful once the specification was clearer: generating the React app, iterating on implementation details, and troubleshooting deployment.
+
+The strongest result came from using the tools sequentially rather than interchangeably:
+
+* human idea and taste
+* ChatGPT for concept and scope
+* Claude for build execution
+* human testing, validation, and publishing decisions
+
+The result was a working interactive prototype produced in a fraction of the original estimated effort, without giving up editorial control.
+
+== Portfolio value
+
+This project demonstrates how I can turn a personal information problem into a structured, usable digital experience.
+
+It combines:
+
+* information architecture
+* visual design direction
+* data modelling
+* AI-assisted prototyping
+* editorial validation
+* lightweight web publishing
+
+It is a small project, but a useful one: a practical example of using AI to move from idea to scoped concept to working product.
