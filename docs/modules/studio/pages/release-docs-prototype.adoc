@@ -21,7 +21,16 @@ image::AI-assisted-release-notes.jpg[Overwhelmed by messy release information, 4
 
 === Planning the prototype
 
-I used AI to help define the project scope, create a fictional SaaS product, and generate a set of mixed release inputs. These included Jira tickets, Git commits, support feedback, and feature notes. I used an Excel workbook to document the project scope, track progress, and record key decisions.
+I used AI to help define the project scope, create a fictional SaaS product, and generate a set of mixed release inputs. These included Jira tickets, Git commits, support feedback, and feature notes. 
+
+image::AI-assisted-release-notes-jira-tickets.jpg[Overwhelmed by messy release information, 450]
+image::AI-assisted-release-notes-git-commits.jpg[Overwhelmed by messy release information, 450]
+
+I used an Excel workbook to document the project scope, track progress, and record key decisions.
+
+image::AI-assisted-release-notes-project-tracker.jpg[Project tracking workbook, 450]
+
+=== Producing the artefacts
 
 [mermaid,remote-voice-workflow,svg]
 ----
@@ -57,8 +66,6 @@ sequenceDiagram
     writer->>finaldocs: Apply final edits and prepare documentation package
     finaldocs-->>writer: Final release notes, validated KB plan, and writer validation checklist
 ----
-
-=== Producing the artefacts
 
 I used structured prompts to process the release inputs and produce draft documentation artefacts, including:
 
@@ -117,13 +124,14 @@ The fictional source inputs were cleaner than real release material I have exper
 
 If I repeated the project, I would use **messier source inputs**, include a **product style guide**, and provide **examples of previous release notes** to better shape the output.
 
-== Preferred workflow
+== Preferred workflow (a hypothesis)
 
 On reflection, my preferred workflow would be to:
 
 * maintain a structured release contents table
-* use AI to cross-check that table for possible gaps and missed documentation impacts, or unclear changes
-* provide the release table, style guide, and previous release note examples as AI input
+* use AI to cross-check that table against sources for possible gaps and missed documentation impacts, or unclear changes
+* have the technical writer review and validate the release contents table
+* provide the validated release table, style guide, and previous release note examples as AI input
 * ask AI to produce a draft
 * have the technical writer validate, edit, and polish the final release communication
 
