@@ -1,0 +1,142 @@
+= AI-assisted release documentation workflow prototype
+:description: A case study in using AI to support release documentation triage by helping a technical writer sort, structure, and review release information.
+
+== Overview
+
+This project explores how AI can support release documentation triage by helping a technical writer sort, structure, and review release information.
+
+== The problem
+
+Release documentation often starts with a surprising amount of scattered detail. Jira tickets, feature notes, Git commits, support feedback, and informal product context can all contain useful clues about what changed.
+
+The challenge is that none of these sources are usually written with the final documentation in mind. They may contain conflicting, incomplete, or ambiguous information. Some details matter to customers, some only matter internally, and some need to be checked before they can be trusted.
+
+This project uses a fictional SaaS product release to simulate that common documentation problem. I wanted to test whether structured AI prompts could help turn selected release inputs into a clearer working view of a release.
+
+Could AI help a technical writer work out what changed, what matters to users, what should stay internal, and which help articles may need updating?
+
+image::AI-assisted-release-notes.jpg[Overwhelmed by messy release information, 450]
+
+== The workflow
+
+=== Planning the prototype
+
+I used AI to help define the project scope, create a fictional SaaS product, and generate a set of mixed release inputs. These included Jira tickets, Git commits, support feedback, and feature notes. I used an Excel workbook to document the project scope, track progress, and record key decisions.
+
+[mermaid,remote-voice-workflow,svg]
+----
+sequenceDiagram
+    participant writer as Technical writer
+    participant sources as Messy source inputs
+    participant ai as AI prompt workflow
+    participant contents as Generated release contents
+    participant drafts as Draft documentation outputs
+    participant validation as Validation findings
+    participant finaldocs as Final documentation package
+
+    writer->>sources: Prepare Jira tickets, feature notes, Git commits, and support feedback
+
+    writer->>ai: Run P-000: Generate draft release contents
+    ai-->>contents: Generated release contents list
+
+    writer->>contents: Review source alignment, exclusions, caveats, and validation notes
+    contents-->>writer: Validated release contents
+
+    writer->>ai: Run P-004: Draft customer-facing release notes
+    ai-->>drafts: Draft release notes
+
+    writer->>ai: Run P-003: Create KB update plan
+    ai-->>drafts: Draft KB update plan
+
+    writer->>ai: Run P-005: Validate AI-generated documentation outputs
+    ai-->>validation: Accuracy, clarity, risk, KB impact, and confirmation findings
+
+    writer->>validation: Review findings and decide what to accept, revise, defer, or flag
+    validation-->>writer: Writer-approved decisions
+
+    writer->>finaldocs: Apply final edits and prepare documentation package
+    finaldocs-->>writer: Final release notes, validated KB plan, and writer validation checklist
+----
+
+=== Producing the artefacts
+
+I used structured prompts to process the release inputs and produce draft documentation artefacts, including:
+
+* a release contents table
+* draft customer-facing release notes
+* a knowledge base update plan
+* validation findings
+
+[cols="1,3,3", options="header"]
+|===
+| Prompt ID
+| Prompt purpose
+| Artefact produced
+
+| link:https://github.com/klwarde/ai-assisted-release-documentation-workflow/blob/main/prompts/p-000-generate-draft-release-contents.md[P-000]
+| Extract release-relevant changes from selected source inputs, including Jira tickets, feature notes, Git commits, support feedback, and product context.
+| link:https://github.com/klwarde/ai-assisted-release-documentation-workflow/blob/main/02-ai-processing/generated-release-contents.md[Draft release contents list]
+
+| link:https://github.com/klwarde/ai-assisted-release-documentation-workflow/blob/main/prompts/p-003-create-kb-update-plan.md[P-003]
+| Identify which help articles, FAQs, or knowledge base pages may need to be created, updated, or reviewed.
+| link:https://github.com/klwarde/ai-assisted-release-documentation-workflow/blob/main/02-ai-processing/draft-kb-update-plan.md[Knowledge base update plan]
+
+| link:https://github.com/klwarde/ai-assisted-release-documentation-workflow/blob/main/prompts/p-004-draft-release-notes.md[P-004]
+| Draft customer-facing release notes from the validated release contents.
+| link:https://github.com/klwarde/ai-assisted-release-documentation-workflow/blob/main/02-ai-processing/draft-release-notes.md[Draft release notes]
+
+| link:https://github.com/klwarde/ai-assisted-release-documentation-workflow/blob/main/prompts/p-005-validate-ai-generated-outputs.md[P-005]
+| Review the draft outputs for source alignment, unsupported claims, exclusions, caveats, and documentation impact.
+| link:https://github.com/klwarde/ai-assisted-release-documentation-workflow/blob/main/02-ai-processing/validation-findings.md[Review findings]
+
+|===
+
+=== Reviewing the outputs
+
+I reviewed the AI outputs as a technical writer, checking source alignment, customer relevance, unsupported claims, permission wording, known issue handling, and documentation impact.
+
+== What I learned
+
+=== Producing useful outputs from mixed inputs
+
+AI was useful for turning mixed release inputs into a clearer release view. It produced several outputs:
+
+* a draft release contents table
+* MVP release notes
+* a first-pass knowledge base impact plan
+
+The release contents table was the strongest output. It made it easier to see what had changed, separate customer-facing updates from internal-only work, and identify likely documentation impacts. It also became a useful source for drafting the release notes because the release information had already been grouped, filtered, and checked.
+
+=== Source preparation matters
+
+In a real release workflow, the first step would be selecting and exporting the right source material. That might include Jira issues filtered by release, fix version, sprint, status, label, or component, along with Git commit metadata for the relevant release range.
+
+However, for this prototype, I bypassed that step [.line-through]#(I cheated)# by using simulated Jira tickets, Git commits, support feedback, and feature notes. The experiment focused less on the mechanics of exporting data and more on what happens after the source material exists.
+
+The fictional source inputs were cleaner than real release material I have experienced, so the project did not fully test how AI handles conflicting, incomplete, or ambiguous information.
+
+If I repeated the project, I would use **messier source inputs**, include a **product style guide**, and provide **examples of previous release notes** to better shape the output.
+
+== Preferred workflow
+
+On reflection, my preferred workflow would be to:
+
+* maintain a structured release contents table
+* use AI to cross-check that table for possible gaps and missed documentation impacts, or unclear changes
+* provide the release table, style guide, and previous release note examples as AI input
+* ask AI to produce a draft
+* have the technical writer validate, edit, and polish the final release communication
+
+At least, this is my hypothesised workflow based on this prototype. I would need to test it in a real release context to see how it works with real source material.
+
+== Portfolio value
+
+This project demonstrates how I can use AI not only to help draft release notes, but also to make release information easier to inspect, question, and shape before publication. It also demonstrates how I used AI to support planning and delivery, from defining the scope and breaking down the work to tracking progress and key decisions.
+
+== Links
+
+The full project files are available in GitHub, including the final release notes, prompt set, validation checklist, and supporting artefacts.
+
+** link:https://github.com/klwarde/ai-assisted-release-documentation-workflow[View the GitHub repository]
+** link:https://github.com/klwarde/ai-assisted-release-documentation-workflow/blob/main/02-ai-processing/generated-release-contents.md[View the generated release contents table]
+** link:https://github.com/klwarde/ai-assisted-release-documentation-workflow/blob/main/04-final-outputs/final-release-notes.md[View the final release notes]

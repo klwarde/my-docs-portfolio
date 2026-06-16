@@ -16,7 +16,7 @@ image::woman-presenting-portfolio2.jpg[Writer presenting portfolio]
 
 ### AI-Assisted Workflows & Tools
 * xref:studio:pulitzer-tracker.adoc[Pulitzer Fiction Reading Tracker] - Demonstrates a multi-AI workflow for turning a personal reading challenge into a working interactive app, from concept scoping and visual design direction through to React prototyping, JSON data validation, local testing, and Netlify publishing.
-* https://github.com/klwarde/ai-assisted-release-documentation-workflow[AI-Assisted Release Documentation Triage Workflow] - Shows how AI can support release discovery, triage, release note drafting, and knowledge base impact analysis while keeping validation and final publishing decisions with the technical writer.
+* xref:studio:release-docs-prototype.adoc[Using AI to Prepare Release Notes] - Shows how AI can help organise release inputs and prepare draft documentation, while the technical writer checks accuracy, relevance, and final wording.
 
 ### Documentation Strategy & Governance
 * xref:docs-metrics:bubble-chart-quality.adoc[Create a Docs Quality Bubble Chart (Excel How-To)] - Shows how to visualise documentation quality using measurable attributes such as complexity and engagement, enabling data-informed content decisions.
